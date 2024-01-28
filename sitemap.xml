@@ -5,10 +5,8 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
     <url>
-        <loc>https://luxury-hotel.pages.dev/</loc>
+        <loc>https://bhigital.pages.dev/</loc>
     </url>
-    <url>
-        <loc>https://luxury-hotel.pages.dev/rooms/</loc>
-    </url>
+    
     <!-- Add more URLs as needed -->
 </urlset>
