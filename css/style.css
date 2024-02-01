@@ -9,6 +9,13 @@
   --txt: #fff;
 }
 
+.herohome{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ /* Remove default body margin */
+}
+
 
 @font-face{
   font-family: reg;
