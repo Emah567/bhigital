@@ -16,7 +16,9 @@
  overflow: hidden !important;
 }
 
-
+ .price-page{
+    background-color: rgb(125, 149, 221) !important;
+  }
 @font-face{
   font-family: reg;
   src:url(./Demo_Fonts/regular.otf);
