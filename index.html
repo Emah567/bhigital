@@ -569,7 +569,7 @@
               <div x-data="{ isAnnual: true }">
              
                   <!-- Pricing toggle -->
-                  <div class="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">
+                  <div class="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16" style="display: none !important;>
                       <div class="relative flex w-full p-1 bg-white dark:bg-slate-900 rounded-full">
                           <span class="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
                               <span class="absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out" :class="isAnnual ? 'translate-x-0' : 'translate-x-full'"></span>
@@ -625,10 +625,10 @@
                                   <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">Basic (promo)</div>
                                   <div class="inline-flex items-baseline mb-2">
                                       <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl">$</span>
-                                      <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '150' : '480'"></span>
+                                      <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '150+' : '480'"></span>
                                       <span class="text-slate-500 font-medium">/mo</span>
                                   </div>
-                                  <div class="text-sm text-slate-500 mb-5">Unlock success with our Promo Plan! Your dream website comes to life with FREE development, SEO magic, and hassle-free maintenance. Only pay for your domain and hosting – no extra costs, just straightforward value.</div>
+                                  <div class="text-sm text-slate-500 mb-5">Get everything you need to establish your online presence with our Basic Plan. Simple, straightforward, and budget-friendly – it's the perfect choice for getting your website up and running quickly and easily.</div>
                                   <a class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="./contact.html">
                                       Purchase Plan
                                   </a>
@@ -680,13 +680,13 @@
                       <div class="h-full">
                           <div class="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-900 shadow shadow-slate-950/5">
                               <div class="mb-5">
-                                  <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">Promo Plan Upgrade</div>
+                                  <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">Premium Plan</div>
                                   <div class="inline-flex items-baseline mb-2">
                                       <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl">$</span>
-                                      <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '90' : '864'"></span>
+                                      <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '1000+' : '864'"></span>
                                       <span class="text-slate-500 font-medium">/mo</span>
                                   </div>
-                                  <div class="text-sm text-slate-500 mb-5">If your business will require Daily, Weekly or Monthly update then this is for you </div>
+                                  <div class="text-sm text-slate-500 mb-5">Upgrade your online presence with our Premium Plan. Packed with advanced features and personalized solutions, it's the ideal option for businesses ready to stand out and succeed online.</div>
                                   <a class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="./contact.html">
                                       Purchase Plan
                                   </a>
@@ -697,7 +697,7 @@
                                       <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                       </svg>
-                                      <span>Website</span>
+                                      <span>5-10 page Website</span>
                                   </li>
                                   <li class="flex items-center">
                                       <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -715,13 +715,13 @@
                                       <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                       </svg>
-                                      <span> Web maintainance</span>
+                                      <span>Blog</span>
                                   </li>
                                   <li class="flex items-center">
                                       <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                       </svg>
-                                      <span>Web update and upgrade</span>
+                                      <span>Gallery </span>
                                   </li>
                                   <li class="flex items-center">
                                       <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -729,10 +729,7 @@
                                       </svg>
                                       <span>1 referral for -35%</span>
                                   </li>
-                                  <div class="upfront" style="display: flex; padding: 10%; gap: 1rem;">
-                                     <h4 style="font-size: 19px; color: #ccc; font-weight: 500;"> Upfront price: </h4>
-                                     <h3 style="font-size: 16px;">$50</h3>
-                                  </div>
+                                  
                               </ul>
                           </div>
   
@@ -745,13 +742,13 @@
 <div class="h-full">
   <div class="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-900 shadow shadow-slate-950/5">
       <div class="mb-5">
-          <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">Standard Plan</div>
+          <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">Premium plus</div>
           <div class="inline-flex items-baseline mb-2">
               <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl">$</span>
-              <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '55' : '528'"></span>
+              <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl" x-text="isAnnual ? '1700+' : '528'"></span>
               <span class="text-slate-500 font-medium">/mo</span>
           </div>
-          <div class="text-sm text-slate-500 mb-5">Unlock the full potential with our Standard Plan. Dive into enhanced features, prioritize support, and personalize your experience at a competitive rate.</div>
+          <div class="text-sm text-slate-500 mb-5">Elevate your online store with our Premium Pro Plan. Tailored for e-commerce websites and beyond, it's the ultimate solution for businesses looking to maximize their online sales and growth.</div>
           <a style="background-color: #4169E1;" onmouseover="this.style.backgroundColor='#3553B2'" onmouseout="this.style.backgroundColor='#4169E1'" class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-royalblue-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-royalblue-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-royalblue-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="./contact.html">
               Purchase Plan
           </a>
@@ -762,7 +759,19 @@
               <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Website</span>
+              <span>15+ page Website</span>
+          </li>
+        <li class="flex items-center">
+              <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>Booking integration</span>
+        </li>
+        <li class="flex items-center">
+              <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>E-commerce or Real estate</span>
           </li>
           <li class="flex items-center">
               <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -780,24 +789,16 @@
               <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Backend</span>
+              <span>More Functionalities</span>
           </li>
-          <li class="flex items-center">
-              <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-              </svg>
-              <span>Web maintainance</span>
-          </li>
+          
           <li class="flex items-center">
               <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
               <span>1 referral for -35%</span>
           </li>
-          <div class="upfront" style="display: flex; padding: 10%; gap: 1rem;">
-             <h4 style="font-size: 19px; color: #ccc; font-weight: 500;"> Upfront price: </h4>
-             <h3 style="font-size: 16px;">$100</h3>
-          </div>
+          
       </ul>
   </div>
 
