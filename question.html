@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free domain</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="docs">
+    
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+}.docs{
+background-color: white; display: flex; align-items: center; justify-content: center; flex-direction: column;
+overflow-x: hidden;
+width: 100vw !important;
+}
+
+.doc-contain{
+    width: 100%;
+    height: 100%;
+    display: flex; align-items: center; justify-content: center;
+  
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 16px;
+  color: #777;
+  max-width: 90vw;
+}
+
+.field input {
+  display: block;
+  min-width:90vw;
+  line-height: 2;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+
+.doc-hero{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    margin-bottom: 2rem;
+    display: flex; align-items: center; justify-content: start;
+    
+}
+
+.doc-hero h1{
+    font-family: bold;
+    color: white;
+    max-width: 80%;
+    margin-left: 5%;
+}
+
+
+    </style>
+    <div class="doc-hero">
+        <h1>Let's get started with a little get to know</h1>
+    </div>
+    
+    <div class="doc-contain">
+        <form id="form">
+  <div class="field">
+    <label for="from_name">Your name</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="to_name">Business or brand name</label>
+    <input type="text" name="to_name" id="to_name">
+  </div>
+  
+  <div class="field">
+    <label for="reply_to">phone</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="reply_to">Email</label>
+    <input type="text" name="reply_to" id="reply_to">
+  </div>
+  
+  
+<div class="field">
+    <label for="message">Do you want to build a new website or redesign an existing one?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">Describe your business in a few sentences </label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">What services do you offer?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">Who is your target audience? </label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">What makes your services unique?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">What features does your website need to be successful?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  
+  <div class="field">
+    <label for="message">Would you like us to provide ongoing support and maintenance?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  
+  <div class="field">
+    <label for="message">What is your budget?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  
+  
+  <div class="field">
+    <label for="message">Do you have any existing style guides and guidelines?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  <div class="field">
+    <label for="message">Would you like to be found easily on google with a boosted SEO plan for your website?</label>
+    
+    <input type="text" name="message" id="message">
+  </div>
+  
+  
+  <div class="field">
+    <label for="message">Do you have a logo?</label>
+    <input type="text" name="message" id="message">
+  </div>
+  
+  
+  <input type="submit" id="button" value="Send Email" >
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('TXSxMZiU1ao2crpp8')
+</script>
+    </div>
+    <script>
+        const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_6m2ui0t';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+    </script>
+</body>
+</html>
