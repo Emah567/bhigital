@@ -18,6 +18,10 @@
 	flex-wrap: wrap;
 }
 
+.isotope-card img{
+border-radius: 1rem;
+}
+
 .cookie-container.hide {
 	opacity: 0;
 	visibility: hidden;
